@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APNa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            height: 100vh;
+            /* width:100vw; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("dia.jpg");
+
+
+
+        }
+
+
+
+
+        .component ul {
+            display: flex;
+            list-style-type: none;
+            padding-top: 30px;
+
+        }
+
+        .component li {
+            margin-left: 20px;
+
+        }
+
+        .component {
+            margin-top: 10px;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            opacity: 0.7;
+            height: 75px;
+        }
+
+        #sec {
+            background-color: #ffffff00;
+            border: none;
+        }
+
+        .logo {
+            height: 58px;
+            margin-left: 50%;
+            opacity: 0.9;
+            /*
+            margin-top: -182px;
+            height: px;
+            padding-top: 20px; */
+            margin-top: -110px;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            /* opacity: 0.7; */
+            /* height: 75px; */
+            mix-blend-mode: color-burn;
+
+        }
+
+        .woman {
+            opacity: 0.7;
+            margin-left: 20rem;
+            margin-top: 20px;
+        }
+
+        div p::first-line {
+            font-size: 2rem;
+
+            /* color: white; */
+        }
+
+        .temp p {
+            margin-top: -15rem;
+            /* align-items: center; */
+            margin-left: 50px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .note {
+            margin-top: 13.20rem;
+            padding: 50px;
+            background-color: rgb(205, 187, 187);
+            height: 320px;
+            /* font-size:25px; */
+
+            /* margin: 30px; */
+            /* margin-right: 100px; */
+
+        }
+
+        .note span {
+            font-size: 35px;
+        }
+
+        .note pre {
+            margin-left: -179px;
+        }
+
+        /* .collection{
+            height: 400px;
+            /* background-color: red; */
+        /* color: rgb(253, 232, 232); */
+        /* } */
+        /* .collection pre{
+            font-size: 35px;
+            opacity: 0.4; */
+        /* } */
+        /* .inner{
+            height: 200px; */
+        /* background-color: yellow; */
+        /* justify-content: center;
+            width: 750px;
+            margin-left: 25%;
+            display: flex;
+            margin-left: 168px; */
+        /* background-color: #333;
+            overflow: auto;
+           white-space: nowrap; */
+        /* padding: 10px; */
+        /* width: 80%;
+           scrollbar-width:thin;
+           margin-left: 165px; */
+
+
+        /* } */
+        /* width */
+        /* ::-webkit-scrollbar {
+  width: 10px; */
+
+        /* } */
+        /* ::-webkit-scrollbar-thumb{
+    background: red;
+}
+
+        .inner img{
+            height: 180px; */
+        /* margin-right: 80px; */
+        /* margin: 2px; */
+        /* padding:10px ;
+            margin-left: 63px;
+            
+        }
+        .about{
+            height: 60px; */
+        /* background-color: red; */
+        /* margin-top: 55px;
+        }
+        .about pre{ */
+        /* margin-top:10px; */
+        /* font-size: 20px;
+            margin-left: 150px;
+        } */
+        /* .about span{
+            font-size: 10px; */
+
+        /* } */
+        .para p {
+            /* height: 200px; */
+            background-color: grey;
+            margin-left: 400px;
+            font-size: 35px;
+            /* color: yellow; */
+            width: 100px;
+            margin-top: -70px;
+            /* background-color: red; */
+
+
+            /* margin-top: 500px; */
+        }
+
+        .box {
+            height: 300px;
+            width: 252px;
+            /* background-color: yellow; */
+            margin-left: -345px;
+            border-radius: 20px;
+            border-top-right-radius: 49px;
+            border: 2px solid rgb(249, 242, 242);
+            margin-top: 65px;
+
+
+        }
+
+        #a {
+            font-size: 23px;
+            margin-left: 45px;
+            padding-top: 20px;
+        }
+
+        #b {
+            font-size: 15px;
+            padding-left: 63px;
+            margin-top: 20px;
+        }
+
+        #c {
+            font-size: 23px;
+            padding-left: -50px;
+            padding-top: 20px;
+            width: 250px;
+            /* margin-left: -0px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 50px;
+            /* background-color:rgb(255, 100, 4) ; */
+            /* border-bottom-left-radius: -150px; */
+            border-bottom: 30px solid transparent;
+            border-Top: -10px solid transparent;
+            border-left: 250px solid #fc6c19;
+            /* border-top: 30px solid transparent; */
+            height: 95px;
+
+        }
+
+        #d {
+            padding-left: 23px;
+        }
+
+        #e {
+            padding-right: 10px;
+            /* margin-top: 10px; */
+            padding-left: -30px;
+        }
+
+        #a2 {
+            font-size: 23px;
+            margin-left: 45px;
+            padding-top: 20px;
+        }
+
+        #b2 {
+            font-size: 15px;
+            padding-left: 63px;
+            margin-top: 20px;
+        }
+
+        #c2 {
+            font-size: 23px;
+            padding-left: -50px;
+            padding-top: 20px;
+            width: 250px;
+            /* border:3px solid grey; */
+            /* margin-left: -0px; */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 50px;
+            /* background-color:rgb(255, 100, 4) ; */
+            /* border-bottom-left-radius: -150px; */
+            border-bottom: 30px solid transparent;
+            /* border-Top: -10px solid transparent; */
+            border-left: 250px solid #fc6c19;
+            /* border-top: 30px solid transparent; */
+            height: 93px;
+
+        }
+
+        #d2 {
+            padding-left: 23px;
+        }
+
+        #e2 {
+            padding-right: 10px;
+            /* margin-top: 10px; */
+            padding-left: -30px;
+        }
+
+        .last {
+            margin-left: -200px;
+        }
+
+        .box10 {
+            display: flex;
+            /* margin-top: 200px; */
+            /* position: absolute; */
+            /* background-color: red; */
+        }
+
+        .para {
+            margin-left: 175px;
+            /* font-weight: bolder; */
+
+        }
+
+        .box1 {
+            margin-top: 65px;
+            margin-left: 20px;
+            height: 300px;
+            width: 252px;
+            border: 2px solid rgb(249, 242, 242);
+            border-bottom: 2px solid rgb(249, 242, 242);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 25px;
+            box-shadow: grey;
+            /* border-bottom-color:black */
+
+
+
+        }
+
+        .trend {
+            margin-left: 165px;
+            /* margin-top: 20px; */
+        }
+
+        .cloud {
+            height: 385px;
+
+            display: flex;
+            /* width: 800px; */
+            margin-left: 154px;
+            /* border: 1px solid black; */
+            width: 1245px;
+            border: 2px solid rgb(0, 200, 255, .2);
+        }
+
+        .cloud img {
+            height: 250px;
+            width: 270px;
+            margin: 20px;
+            /* border-right: 1000px; */
+
+        }
+
+        .cloud img :hover {}
+
+        .gold {
+            border-right: 2px solid rgb(0, 200, 255, .2)
+        }
+
+        .gold h5 {
+            /* font-size:medium; */
+            /* font-weight: 50px; */
+            /* font-size: px; */
+            margin-left: 50%;
+            margin-top: -15px;
+
+        }
+
+        .gold span {
+            margin-left: 138px;
+            /* position: fixed; */
+        }
+
+        .gold1 {
+            /* margin-top: 20px; */
+            margin-top: 10px;
+            /* margin-left: -10px; */
+            border-radius: 12px;
+            border: 2px solid red;
+            background-color: red;
+            font-weight: bold;
+            color: white;
+            margin-left: -18px
+                /* width: 150px; */
+        }
+
+        .gold1:hover {
+            border: 2px solid rgb(0, 200, 255, .2);
+            background-color: black;
+            color: rgb(78, 163, 248)
+        }
+
+        .gold12 {
+
+            border-right: 2px solid rgb(0, 200, 255, .2);
+            border: none;
+        }
+
+
+        .gold12 h5 {
+            margin-left: 45%;
+            margin-top: -15px;
+        }
+
+        .gold12 span {
+            /* margin-left: px; */
+            margin-left: 123px
+        }
+
+        .gold12 button {
+            background-color: red;
+            border-radius: 12px;
+            border: 2px solid red;
+            /* background-color: red; */
+            font-weight: bold;
+            color: white;
+            /* width: 120px; */
+            margin-top: 10px;
+            margin-left: -18px;
+
+        }
+
+        .gold12 button:hover {
+            border: 2px solid rgb(0, 200, 255, .2);
+            background-color: black;
+            color: rgb(78, 163, 248)
+        }
+
+        .silver {
+            border-right: 2px solid rgb(0, 200, 255, .2)
+        }
+
+        .silver h5 {
+            margin-left: 45%;
+            margin-top: -15px;
+
+        }
+
+        .silver span {
+            margin-left: 138px;
+
+        }
+
+        .silver01 {
+            border-right: 2px solid rgb(0, 200, 255, .2)
+        }
+
+        .silver01 h5 {
+            margin-left: 28%;
+            margin-top: -15px;
+
+
+        }
+
+        .silver01 span {
+            margin-left: 138px;
+        }
+
+        .silver02 {
+            border-right: 2px solid rgb(0, 200, 255, .2)
+        }
+
+        .silver02 h5 {
+            margin-left: 22%;
+            margin-top: -15px;
+
+
+        }
+
+        .silver02 span {
+            margin-left: 120px;
+        }
+
+        .silver02 button {
+            background-color: red;
+            border-radius: 12px;
+            border: 2px solid red;
+            /* background-color: red; */
+            font-weight: bold;
+            color: white;
+            /* width: 120px; */
+            margin-top: 10px;
+            margin-left: -18px;
+        }
+
+        .silver03 {
+            border-right: 2px solid rgb(0, 200, 255, .2);
+            border: none;
+
+        }
+
+        .silver03 h5 {
+            margin-left: 20%;
+            margin-top: -15px;
+
+
+        }
+
+        .silver03 span {
+            margin-left: 118px;
+        }
+
+        .silver03 button {
+            background-color: red;
+            border-radius: 12px;
+            border: 2px solid red;
+            /* background-color: red; */
+            font-weight: bold;
+            color: white;
+            /* width: 120px; */
+            margin-top: 10px;
+            margin-left: -19px;
+        }
+
+        .big img {
+            margin-left: 10.1%;
+            margin-top: 75px;
+            height: 550px;
+            /* width: 400px; */
+            border-radius: 10px;
+        }
+
+        .big1 img {
+            height: 300px;
+            width: 370px;
+            margin-left: 1050px;
+            margin-top: -815px;
+        }
+
+        .thirdImg img {
+            height: 200px;
+            width: 350px;
+            /* width: 370px; */
+            /* margin-left: 1050px; */
+            /* float: right; */
+            /* margin-top: -815px; */
+            /* float:right; */
+            /* margin-right: 150px; */
+            /* margin-bottom: 400px; */
+            margin-top: -270px;
+            margin-left: 1050px;
+            /* top: 100px; */
+            /* position: absolute; */
+            /* margin-top: 100px; */
+
+        }
+
+        .thirdImg {
+            /* position: relative;
+        top: 10px; */
+
+        }
+
+        footer {
+            background-color: rgb(171, 98, 98);
+            color: #ffffff;
+            font-family: 'Open Sans', sans-serif;
+            padding: 50px 0;
+        }
+
+        .footer-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo img {
+            max-width: 150px;
+        }
+
+        .footer-apps h4,
+        .footer-newsletter h4 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #d4af37;
+        }
+
+        .footer-apps a img,
+        .footer-newsletter input {
+            margin-right: 10px;
+            max-width: 40px;
+        }
+
+        .footer-newsletter input {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 200px;
+            font-size: 14px;
+        }
+
+        .footer-newsletter button {
+            background-color: #d4af37;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            color: #2b2b2b;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .footer-newsletter button:hover {
+            background-color: #b38d29;
+        }
+
+        .footer-middle {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #d4af37;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+            color: #d4af37;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+
+        .footer-bottom p {
+            margin: 5px 0;
+        }
+
+        .footer-bottom a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: #b38d29;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="photo"> -->
+    <div class="component">
+        <ul>
+
+            <SELECT id="sec">
+                <option>Menu</option>
+                <option>About Us</option>
+                <option>Help</option>
+                <option>Contact Us</option>
+            </SELECT>
+
+            <li>Jewels</li>
+            <li>Now Featuring</li>
+            <li>History & Heritagei</li>
+
+        </ul>
+        <img src="logo-removebg-preview.png" height="10px" class="logo component">
+    </div>
+    <div>
+        <img src="logo.png" class="logo component">
+        <div>
+            <!-- <div><img src="pho.jpg"></div> -->
+            <img src="woman-removebg-preview.png" class="woman">
+
+
+        </div>
+
+    </div>
+
+
+    <!-- </div> -->
+    <div class="temp">
+        <p>
+            <sapn>TEMPLE</sapn><br> Divine & majestic
+        </p>
+
+    </div>
+    <div class="note">
+        <p>
+        <pre>        <span>             PUNJAB JEWELS SPECIALISES IN BOTH MODERN
+                AND ETHNIC DESIGNS TO CATER TO YOUR 
+                VARYING NEEDS & MOODS.</span>
+                
+                                        With a wide array of jewellery ranging from everyday wear to exclusive 
+                                        one-of-a-kind bridal sets,discover the world of precious and semi-
+                                        precious jewlsmavailable only at Punjab Jewels.
+        </pre>
+        </p>
+    </div>
+    <!-- <div class="collection">
+    <p> <pre>         Punjab Jewels Collections - View all</pre></p>
+<div class="inner">
+<img src="pa1.jpg">
+<img src="pa2.jpg">
+<img src="pa3.jpg">
+<img src="jew.jpg">
+</div>
+
+</div>
+ -->
+    <!-- <div>  <p class="para">Retail Gold / Silver Price</p></div> -->
+    <div class="box10">
+        <p class="para">Retail Gold / Silver Price</p>
+        <div class="box">
+            <div id="c">
+                <div class="last">Gold-22k (916)</div>
+            </div>
+            <div id="a">Rs 6670.00/-per<br><span id="d">gram</span></div>
+            <div id="b">Last Updated on <br><span id="e">24-May-2024 12:14 pm</span></div>
+
+        </div>
+        <div class="box1">
+            <div id="c2">
+                <div class="last">Gold-22k (916)</div>
+            </div>
+            <div id="a2">Rs 6670.00/-per<br><span id="d2">gram</span></div>
+            <div id="b2">Last Updated on <br><span id="e2">24-May-2024 12:14 pm</span></div>
+
+        </div>
+    </div>
+    <div class="trend">
+        <p>Top Trending Products</p>
+    </div>
+    <div class="cloud">
+        <div class="gold"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/jckgclcukiyjsalwqx7e">
+            <h5>
+                tops</h5>
+            <span> &#8377 180777 </span>
+
+            <span><button class="gold1">Add To Cart</button></span>
+        </div>
+
+
+        <div class="gold"> <img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/likvb57md27u5usk4qxe">
+            <h5>
+                tops</h5>
+            <span> &#8377 180777 </span>
+
+            <span><button class="gold1">Add To Cart</button></span>
+        </div>
+        <div class="gold12"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/fj7n64i9pywythnrscwq">
+            <h5>
+                tops</h5>
+            <span> &#8377 180777 </span>
+
+            <span><button>Add To Cart</button></span>
+        </div>
+        <div class="gold12"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/je4dbjcq1qmxdyfkqavi">
+            <h5>
+                tops</h5>
+            <span> &#8377 180777 </span>
+
+            <span><button>Add To Cart</button></span>
+        </div>
+    </div>
+
+    <div class="trend">
+        <p>New Arrival</p>
+    </div>
+    <div class="cloud">
+        <div class="silver"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/cvkw3ebrlqmh9vwi5zye">
+            <h5>
+                Chokar</h5>
+            <span> &#8377 180777 </span>
+
+            <span><button class="gold1">Add To Cart</button></span>
+        </div>
+
+
+        <div class="silver01"> <img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/bgr7j2gnaszm9rb89tv1">
+            <h5>
+                Antique Jhumky</h5>
+            <span> &#8377 280777 </span>
+
+            <span><button class="gold1">Add To Cart</button></span>
+        </div>
+        <div class="silver02"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/xp54htgqhefbdbd9tqgq">
+            <h5>
+                Ruby And Cz Bangles</h5>
+            <span> &#8377 380777 </span>
+
+            <span><button>Add To Cart</button></span>
+        </div>
+        <div class="silver03"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/ckap8ukciewfyxgq2xep">
+            <h5>
+                Electro Foaming Haara</h5>
+            <span> &#8377 185777 </span>
+
+            <span><button>Add To Cart</button></span>
+        </div>
+    </div>
+    <div class="big">
+        <img
+            src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_964,h_623,c_fill,g_auto/v1581681429/anand-jewellers-176/docs/fulu1mptayws64nkel07">
+        <div class="big1"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_964,h_623,c_fill,g_auto/v1581681429/anand-jewellers-176/docs/ssm3dcdr2iguqlvdbfdx">
+        </div>
+        <div class="thirdImg"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_964,h_623,c_fill,g_auto/v1581681429/anand-jewellers-176/docs/zzqydmht6wjyv5tumkso">
+        </div>
+    </div>
+    <!-- </div> -->
+    <div class="trend">
+        <p> Special Arrival For You</p>
+    </div>
+    <div class="cloud">
+        <div class="silver"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/cvkw3ebrlqmh9vwi5zye">
+            <h5>
+                Chokar</h5>
+            <span> &#8377 180777 </span>
+
+            <span><button class="gold1">Add To Cart</button></span>
+        </div>
+
+
+        <div class="silver01"> <img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/bgr7j2gnaszm9rb89tv1">
+            <h5>
+                Antique Jhumky</h5>
+            <span> &#8377 280777 </span>
+
+            <span><button class="gold1">Add To Cart</button></span>
+        </div>
+        <div class="silver02"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/xp54htgqhefbdbd9tqgq">
+            <h5>
+                Ruby And Cz Bangles</h5>
+            <span> &#8377 380777 </span>
+
+            <span><button>Add To Cart</button></span>
+        </div>
+        <div class="silver03"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_500,h_500,c_fill,g_auto/v1581681429/anand-jewellers-176/products/ckap8ukciewfyxgq2xep">
+            <h5>
+                Electro Foaming Haara</h5>
+            <span> &#8377 185777 </span>
+
+            <span><button>Add To Cart</button></span>
+
+        </div>
+
+    </div>
+    <div class="big">
+        <img
+            src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_964,h_623,c_fill,g_auto/v1581681429/anand-jewellers-176/docs/qkhg0d3308n5gqkvnhvn">
+        <div class="big1"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_964,h_623,c_fill,g_auto/v1581681429/anand-jewellers-176/docs/erzoilexx8hw9ivdrmfh">
+        </div>
+        <div class="thirdImg"><img
+                src="https://res.cloudinary.com/tansh/image/upload/f_auto,w_964,h_623,c_fill,g_auto/v1581681429/anand-jewellers-176/docs/zzqydmht6wjyv5tumkso">
+        </div>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="path_to_logo" alt="Anand Jewellers Logo">
+                    </div>
+                    <div class="footer-apps">
+                        <h4>Download Our App</h4>
+                        <a href="#"><img src="path_to_android_icon" alt="Android App"></a>
+                        <a href="#"><img src="path_to_ios_icon" alt="iOS App"></a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="footer-middle">
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Why Choose Us?</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Customer Service</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Shipping Information</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                            <li><a href="#">Saving Scheme Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>© 2024 Anand Jewellers. All Rights Reserved.</p>
+                    <p>Powered By <a href="https://www.anandjewellersmalleswaram.com/">Punjab Jewellers</a></p>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
